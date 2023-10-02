@@ -1,0 +1,27 @@
+B.E.M Naming rules for classes:
+
+>The BEM stands for Block Element and Modifier.
+>When working on a large-scale web development project, it’s essential to have a consistent and organized approach 
+for styling. and with the help of BEM naming convention we can achieve that goal.
+>BEM uses block, element, and modifier names to construct CSS class names, separated by double underscores (__)
+ and hyphens (-).
+>It is based on the idea of breaking down a web page into smaller, reusable blocks of code. 
+>syntax:
+block__element--modifier
+
+how i have given class name using BEM naming convention in task 3.2?
+
+>in my task there is single block div, and p1 p2 p3 are the child of div.
+>i have  given div a block class named box.
+>then i have given p1 p2 p3 seperate element classes usin BEM naming convention syntax.
+Eg; block__element
+    p1 class name:  box__para1 
+    p2 class name:  box__para2 
+    p3 class name:  box__para3 
+
+>for modifier class name we use syntax
+block__element--modifier
+in p3 i have  used modifier class: box__para3--colgrad (gives liner gradient)
+.modifier class used to override existing property of perticular element with some special property.
+
+

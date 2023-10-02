@@ -1,0 +1,79 @@
+
+ /* here i am creating my custom color pallete with the help of root psudo class. */
+ :root{
+    --primarycolor:skyblue;
+    --secondarycolor:rgb(233, 255, 192);
+    --tertiarycolor:rgba(235, 12, 160, 0.288);
+}
+.box{
+    border: 4px solid black;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 670px;
+    height: 670px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e1bee7;
+    
+}
+label{
+    display: inline-block;
+    width: 150px;
+}
+button{
+    display:block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+    height: 30px;
+    border-radius: 40%;
+    background-color:#bdbdbd;
+}
+.details{
+    background-color:#fffde7;
+    margin-top: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.address{
+    background-color:#ffcc80;
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.7;
+}
+.carddetails{
+    background-color: #ffff0082;
+    opacity: 1;
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+ .textfield{
+    background-color:var(--primarycolor);
+    /* here i am applying my first custom color on the input field background with the help of var. */
+    opacity: 0.9;
+    /* here i am providing opacity to the input field background color. */
+   
+}
+.useraddress{
+    background-color:var(--secondarycolor);
+    /* here i am applying my second custom color on the input field background with the help of var. */
+    opacity: 0.7;
+    /* here i am providing opacity to the input field background color. */
+}
+.credentials{
+    background-color:var(--tertiarycolor) ;
+    /* here i am applying my third custom color on the input field background with the help of var. */
+    opacity: 0.8;
+    /* here i am providing opacity to the input field background color. */
+}
+::placeholder{
+    color: red;
+}
+h1{
+    text-align: center;
+    text-shadow: 7px 5px 10px green;
+    text-decoration: underline;
+}

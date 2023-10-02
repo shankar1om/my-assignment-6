@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task6.3</title>
+    <link rel="stylesheet" href="./task6.3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"  />
+   
+</head>
+<body>
+    <h1>Fill it to checkout</h1>
+    <div class="box">
+        <form action="#">
+            
+               <fieldset class="details">
+                <legend><b>step1:your details</b></legend>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="First and last name" required  class="textfield"><br><br>
+                <label for="email">email:</label>
+                <input type="email" name="email" id="email" placeholder="abc@gmail.com" required  class="textfield"><br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Eg:9999999999" required class="textfield">
+                </fieldset>
+                <fieldset class="address">
+                    <legend><b>step2:delivery address</b></legend>
+                    <label for="address" >Address:</label>
+                    <textarea name="address" id="address" cols="20" rows="10" class="useraddress"></textarea ><br><br>
+                    <label for="post">Post code:</label>
+                    <input type="number" name="post" id="post" maxlength="6" required class="useraddress">  <br><br>
+                    <label for="country">Country:</label>
+                    <input type="text" name="country" id="country" required class="useraddress">
+                </fieldset>
+                <fieldset class="carddetails">
+                    <legend><b>card details:</b></legend>
+                    <label for="cardtype"> card type:</label>
+                    <input type="radio" id="cardtype" name="radio" required class="credentials"><i class="fa-brands fa-cc-visa"></i>
+                    <input type="radio" id="cardtype" name="radio" required class="credentials"><i class="fa-brands fa-cc-amex"></i><br><br>
+                    <label for="card number">Card  number:</label>
+                    <input type="number" name="card number" id="card  number" min="1" max="16" required  class="credentials"><br><br>
+                    <label for="name of card">Name of card :</label>
+                    <input type="text" name="name of card" id="name of card" required  class="credentials"><br><br>
+                    <label for="expiry date">Date Of Expiry:</label>
+                    <input type="date" id="expiry date" name="expiry date" required  class="credentials">
+
+                </fieldset>
+              
+                <button><input type="submit" value="BUY IT!" name="submit"></button>
+              
+            
+        </form>
+    </div>
+</body>
+</html>

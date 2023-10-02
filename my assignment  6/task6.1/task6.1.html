@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task6.1</title>
+    <link rel="stylesheet" href="./container3.css"> 
+    <!-- here i am applying container 3 all css property with the help of external css method. -->
+    <link rel="stylesheet" href="./task6.1.css"> 
+    <!-- here i am going to apply text color blue in p tag with the help external css. -->
+    <style>
+        body{
+            background-image: url(https://png.pngtree.com/background/20210712/original/pngtree-dramatic-night-sky-with-palm-and-sea-picture-image_1169805.jpg);
+            background-repeat:repeat-x;
+           
+        }
+           
+            
+        .maincontainer{
+           
+            margin: 150px auto auto auto;
+        }
+       .maincontainer .container1{
+            width: 500px;
+            height: 100px;
+            border: 4px solid white;
+           
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            background-image:linear-gradient(45deg,red,indigo,violet,green,skyblue) ;
+            box-shadow: 7px 6px 12px yellow ;
+        }
+         .maincontainer .container1 .quote1{
+        white-space: pre-wrap;
+        color: aliceblue;
+        }
+        /* here i am applying container 1 all css property with the help of internal css method.  */
+
+      
+
+       .maincontainer .container2{
+        width: 500px;
+            height: 100px;
+            border: 4px solid white;
+           
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            background-image:linear-gradient(red,yellow,pink,lightgreen) ;
+            box-shadow: -7px 6px 12px #e3f2fd ;
+       }
+    
+       .maincontainer .container2 .quote2{
+        color:red;
+        
+        /* here i am going to apply the css property text color(red color) in p tag with the help of internal css. */ 
+       }
+
+       div .heading{
+        text-transform:uppercase;
+        text-align: center;
+        color: aliceblue;
+        word-spacing: 1px;
+        text-shadow: 7px 5px 8px greenyellow;
+        text-decoration: underline;
+       }
+    </style>
+
+</head>
+<body>
+    <div>
+        <h1 class="heading">legendary quotes by legends</h1>
+        <div class="maincontainer">
+
+            <div class="container1">
+                <p class="quote1">  Look at the sky. We are not alone. The whole universe is friendly to us and 
+      conspires only to give the best to those who dream and work.
+    
+                    A. P. J. Abdul Kalam</p>
+            </div>
+
+            <!-- here i am going apply the css property text color in p tag with the help of inline css. -->
+            <!-- here i am going to apply css property on all the content of tag p(quote2) ,with the help of inline 
+                css method. -->
+            <div class="container2">
+                <p class="quote2" style="color: black; white-space: pre-wrap;">  You only have to do a very few things right in your life so long as you don't 
+      do too many things wrong.
+                    
+                    Warren Buffett
+                </p>
+            </div>
+
+            <div class="container3">
+                <p class="quote3">  A computer would deserve to be called intelligent if it could deceive
+      a human into believing that it was human. 
+                    
+                    Alan Turing
+                    </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- i have applied the different text color to the content in p tag with the help
+of inline , internal  and external css,but among all only inline css (black color) 
+have applied on the text.
+when i removed the inline css than between internal and external ,internal gets
+higher priority, so we can say that inline css has more property than internal css
+and among all external  css has least priority.
+
+  inline-css > internal-css > external-css -->
